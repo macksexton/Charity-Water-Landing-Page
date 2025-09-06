@@ -1,0 +1,173 @@
+/* 
+filepath: /charity-water-landing-page/charity-water-landing-page/styles.css 
+This CSS file styles the landing page for the Charity Water project.
+It uses simple CSS for beginners.
+*/
+
+/* Basic reset for margins and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a white background for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff; /* Changed from navy blue to white */
+}
+
+/* Style for the hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: #183059;
+    overflow: hidden;
+}
+
+/* Add this for the hero background image */
+.hero-bg {
+    /* Use the CW_Girl.png image from the img folder as the background */
+    background-image: url('image/CW_Girl.png');
+    background-size: cover;         /* Make the image cover the whole area */
+    background-position: center;    /* Center the image */
+    position: absolute;             /* Place it behind the text */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.55;                  /* Make the image a bit see-through for readability */
+    z-index: 1;                     /* Make sure it's behind the text */
+}
+
+/* Content on top of the background */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    margin-left: 40px;
+    max-width: 400px;
+}
+
+/* Headline styles */
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* Headline highlights */
+.headline-main {
+    color: #fff;
+}
+.headline-sub {
+    display: inline-block;
+    margin-top: 4px;
+}
+.is {
+    background: #3a5a7a;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 10px 0 0 10px;
+}
+.their-water {
+    background: #234a8c;
+    color: #fff;
+    padding: 2px 16px;
+    border-radius: 0 12px 12px 0;
+    margin-left: -4px;
+}
+
+/* Subheadline styles */
+.subheadline {
+    font-size: 1.1em;
+    margin-bottom: 24px;
+    color: #e0e0e0;
+}
+
+/* Style for the call-to-action section */
+.call-to-action {
+    background-color: #28a745; /* Green background for call-to-action */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding */
+}
+
+/* Style for the donate button */
+.donate-button {
+    background-color: #ffc107; /* Yellow background for button */
+    color: black; /* Black text color */
+    padding: 10px 20px; /* Add padding */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block;
+    transition: background 0.2s;
+}
+.donate-button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Donate button styles */
+.donate-btn {
+    background: #ffd34e;
+    color: #222;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: background 0.2s;
+}
+.donate-btn:hover {
+    background: #ffb800;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo styles */
+.logo {
+    height: 40px;
+}
+
+/* Sign In link styles */
+.sign-in {
+    text-decoration: none;
+    color: #000; /* Changed to black */
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.sign-in:hover {
+    color: #444; /* Slightly lighter black on hover */
+}
+
+/* Responsive for small screens */
+@media (max-width: 700px) {
+    .hero-content {
+        margin-left: 10px;
+        max-width: 95%;
+    }
+    .hero-content h1 {
+        font-size: 1.3em;
+    }
+    .hero {
+        height: 60vh;
+        min-height: 300px;
+    }
+}
